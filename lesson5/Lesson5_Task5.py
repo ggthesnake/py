@@ -1,0 +1,7 @@
+f1 = open("file_task5.txt", 'w')
+s = input('Enter several numbers with spaces:')
+print(s, file=f1)
+f1 = open("file_task5.txt", 'r')
+list = map(int, f1.readline().split())
+print(sum(set(list)))
+f1.close()
